@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Chat Application - Vuexy - Bootstrap HTML admin template</title>
+    <link rel="apple-touch-icon" href="../app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors-rtl.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css-rtl/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css-rtl/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css-rtl/colors.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css-rtl/components.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css-rtl/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css-rtl/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css-rtl/core/menu/menu-types/horizontal-menu.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css-rtl/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css-rtl/pages/app-chat.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css-rtl/custom-rtl.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="horizontal-layout horizontal-menu content-left-sidebar chat-application navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="content-left-sidebar">
+
+  <!-- BEGIN: Header-->
+  <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-fixed navbar-shadow navbar-brand-center">
+    <div class="navbar-header d-xl-block d-none">
+        <ul class="nav navbar-nav flex-row">
+            <li class="nav-item"><a class="navbar-brand" href="../../../html/rtl/horizontal-menu-template/index.html">
+                      <div class="brand-logo"><img class="round" src="../app-assets/images/portrait/small/agrofuse-logo-sm.png" alt="avatar" height="40" width="40"></div>
+                </a></li>
+        </ul>
+    </div>
+    <div class="navbar-wrapper">
+        <div class="navbar-container content">
+            <div class="navbar-collapse" id="navbar-mobile">
+                <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav bookmark-icons">
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-toggle="tooltip" data-placement="top" title="Todo"><i class="ficon feather icon-check-square"></i></a></li>
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.html" data-toggle="tooltip" data-placement="top" title="Chat"><i class="ficon feather icon-message-square"></i></a></li>
+                       <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calender.html" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon feather icon-calendar"></i></a></li>
+                    </ul>
+                   
+                </div>
+                <ul class="nav navbar-nav float-right">
+                    
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon feather icon-maximize"></i></a></li>
+                    
+                    <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                            <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">John Doe</span><span class="user-email">john@email.com</span></div><span><img class="round" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="page-user-profile.html"><i class="feather icon-user"></i> Add Equipment</a><a class="dropdown-item" href="app-todo.html"><i class="feather icon-check-square"></i> Task</a><a class="dropdown-item" href="app-chat.html"><i class="feather icon-message-square"></i> Chats</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="auth-login.html"><i class="feather icon-power"></i> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<ul class="main-search-list-defaultlist d-none">
+    <li class="d-flex align-items-center"><a class="pb-25" href="#">
+            <h6 class="text-primary mb-0">Files</h6>
+        </a></li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer"><a class="d-flex align-items-center justify-content-between w-100" href="#">
+            <div class="d-flex">
+                <div class="mr-50"><img src="../app-assets/images/icons/xls.png" alt="png" height="32"></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
+                </div>
+            </div><small class="search-data-size mr-50 text-muted">&apos;17kb</small>
+        </a></li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer"><a class="d-flex align-items-center justify-content-between w-100" href="#">
+            <div class="d-flex">
+                <div class="mr-50"><img src="../app-assets/images/icons/jpg.png" alt="png" height="32"></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
+                </div>
+            </div><small class="search-data-size mr-50 text-muted">&apos;11kb</small>
+        </a></li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer"><a class="d-flex align-items-center justify-content-between w-100" href="#">
+            <div class="d-flex">
+                <div class="mr-50"><img src="../app-assets/images/icons/pdf.png" alt="png" height="32"></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
+                </div>
+            </div><small class="search-data-size mr-50 text-muted">&apos;150kb</small>
+        </a></li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer"><a class="d-flex align-items-center justify-content-between w-100" href="#">
+            <div class="d-flex">
+                <div class="mr-50"><img src="../app-assets/images/icons/doc.png" alt="png" height="32"></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">Anna_Strong</p><small class="text-muted">Web Designer</small>
+                </div>
+            </div><small class="search-data-size mr-50 text-muted">&apos;256kb</small>
+        </a></li>
+    <li class="d-flex align-items-center"><a class="pb-25" href="#">
+            <h6 class="text-primary mb-0">Members</h6>
+        </a></li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="#">
+            <div class="d-flex align-items-center">
+                <div class="avatar mr-50"><img src="../app-assets/images/portrait/small/avatar-s-8.jpg" alt="png" height="32"></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
+                </div>
+            </div>
+        </a></li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="#">
+            <div class="d-flex align-items-center">
+                <div class="avatar mr-50"><img src="../app-assets/images/portrait/small/avatar-s-1.jpg" alt="png" height="32"></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
+                </div>
+            </div>
+        </a></li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="#">
+            <div class="d-flex align-items-center">
+                <div class="avatar mr-50"><img src="../app-assets/images/portrait/small/avatar-s-14.jpg" alt="png" height="32"></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
+                </div>
+            </div>
+        </a></li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="#">
+            <div class="d-flex align-items-center">
+                <div class="avatar mr-50"><img src="../app-assets/images/portrait/small/avatar-s-6.jpg" alt="png" height="32"></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
+                </div>
+            </div>
+        </a></li>
+</ul>
+<ul class="main-search-list-defaultlist-other-list d-none">
+    <li class="auto-suggestion d-flex align-items-center justify-content-between cursor-pointer"><a class="d-flex align-items-center justify-content-between w-100 py-50">
+            <div class="d-flex justify-content-start"><span class="mr-75 feather icon-alert-circle"></span><span>No results found.</span></div>
+        </a></li>
+</ul>
+<!-- END: Header-->
+
+    <!-- BEGIN: Main Menu-->
+    <div class="horizontal-menu-wrapper">
+        <div class="header-navbar navbar-expand-sm navbar navbar-horizontal floating-nav navbar-light navbar-without-dd-arrow navbar-shadow menu-border" role="navigation" data-menu="menu-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/rtl/horizontal-menu-template/index.html">
+                              <div class="brand-logo"><img class="round" src="../app-assets/images/portrait/small/agrofuse-logo-sm.png" alt="avatar" height="40" width="40"></div>
+                            <h2 class="brand-text mb-0">Vuexy</h2>
+                        </a></li>
+                    <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
+                </ul>
+            </div>
+            <!-- Horizontal menu content-->
+            <div class="navbar-container main-menu-content" data-menu="menu-container">
+                <!-- include ../../../includes/mixins-->
+                <ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation">
+                    <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="index.html" data-toggle="dropdown"><i ></i><span data-i18n="Dashboard">Back</span></a>
+                        <ul class="dropdown-menu">
+                            <li data-menu=""><a class="dropdown-item" href="index.html" data-toggle="dropdown" data-i18n="Analytics"><i class="feather icon-home"></i>Dashboard</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        
+        <div class="content-area-wrapper">
+            
+            <div class="sidebar-left">
+                <div class="sidebar">
+                    <!-- User Chat profile area -->
+                    <div class="chat-profile-sidebar">
+                        <header class="chat-profile-header">
+                            <span class="close-icon">
+                                <i class="feather icon-x"></i>
+                            </span>
+                            <div class="header-profile-sidebar">
+                                <div class="avatar">
+                                    <img src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="user_avatar" height="70" width="70">
+                                    <span class="avatar-status-online avatar-status-lg"></span>
+                                </div>
+                                <h4 class="chat-user-name">John Doe</h4>
+                            </div>
+                        </header>
+                        <div class="profile-sidebar-area">
+                            <div class="scroll-area">
+                                <h6>About</h6>
+                                <div class="about-user">
+                                    <fieldset class="mb-0">
+                                        <textarea data-length="120" class="form-control char-textarea" id="textarea-counter" rows="5" placeholder="About User">Dessert chocolate cake lemon drops jujubes. Biscuit cupcake ice cream bear claw brownie brownie marshmallow.</textarea>
+                                    </fieldset>
+                                    <small class="counter-value float-right"><span class="char-count">108</span> / 120 </small>
+                                </div>
+                                <h6 class="mt-3">Status</h6>
+                                <ul class="list-unstyled user-status mb-0">
+                                    <li class="pb-50">
+                                        <fieldset>
+                                            <div class="vs-radio-con vs-radio-success">
+                                                <input type="radio" name="userStatus" value="online" checked="checked">
+                                                <span class="vs-radio">
+                                                    <span class="vs-radio--border"></span>
+                                                    <span class="vs-radio--circle"></span>
+                                                </span>
+                                                <span class="">Active</span>
+                                            </div>
+                                        </fieldset>
+                                    </li>
+                                    <li class="pb-50">
+                                        <fieldset>
+                                            <div class="vs-radio-con vs-radio-danger">
+                                                <input type="radio" name="userStatus" value="busy">
+                                                <span class="vs-radio">
+                                                    <span class="vs-radio--border"></span>
+                                                    <span class="vs-radio--circle"></span>
+                                                </span>
+                                                <span class="">Do Not Disturb</span>
+                                            </div>
+                                        </fieldset>
+                                    </li>
+                                    <li class="pb-50">
+                                        <fieldset>
+                                            <div class="vs-radio-con vs-radio-warning">
+                                                <input type="radio" name="userStatus" value="away">
+                                                <span class="vs-radio">
+                                                    <span class="vs-radio--border"></span>
+                                                    <span class="vs-radio--circle"></span>
+                                                </span>
+                                                <span class="">Away</span>
+                                            </div>
+                                        </fieldset>
+                                    </li>
+                                    <li class="pb-50">
+                                        <fieldset>
+                                            <div class="vs-radio-con vs-radio-secondary">
+                                                <input type="radio" name="userStatus" value="offline">
+                                                <span class="vs-radio">
+                                                    <span class="vs-radio--border"></span>
+                                                    <span class="vs-radio--circle"></span>
+                                                </span>
+                                                <span class="">Offline</span>
+                                            </div>
+                                        </fieldset>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ User Chat profile area -->
+                    <!-- Chat Sidebar area -->
+                    <div class="sidebar-content card">
+                        <span class="sidebar-close-icon">
+                            <i class="feather icon-x"></i>
+                        </span>
+                        <div class="chat-fixed-search">
+                            <div class="d-flex align-items-center">
+                                <div class="sidebar-profile-toggle position-relative d-inline-flex">
+                                    <div class="avatar">
+                                        <img src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="user_avatar" height="40" width="40">
+                                        <span class="avatar-status-online"></span>
+                                    </div>
+                                    <div class="bullet-success bullet-sm position-absolute"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="users-list" class="chat-user-list list-group position-relative">
+                            
+                            <ul class="chat-users-list-wrapper media-list">
+                                <li>
+                                    <div class="pr-1">
+                                        <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle" src="../app-assets/images/portrait/small/avatar-s-3.jpg" height="42" width="42" alt="Generic placeholder image">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                    <div class="user-chat-info">
+                                        <div class="contact-info">
+                                            <h5 class="font-weight-bold mb-0">!Dr Chatbot</h5>
+                                            <p>Ask me about faults with your equipment</p>
+                                        </div>
+     
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                                                    </div>
+                    </div>
+                    <!--/ Chat Sidebar area -->
+
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="content-wrapper">
+                    <div class="content-header row">
+                    </div>
+                    <div class="content-body">
+                        <div class="chat-overlay"></div>
+                        <section class="chat-app-window">
+                            <div class="start-chat-area">
+                                <span class="mb-1 start-chat-icon feather icon-message-square"></span>
+                                <h4 class="py-50 px-1 sidebar-toggle start-chat-text">Start Conversation</h4>
+                            </div>
+                            <div class="active-chat d-none">
+                                <div class="chat_navbar">
+                                    <header class="chat_header d-flex justify-content-between align-items-center p-1">
+                                        <div class="vs-con-items d-flex align-items-center">
+                                            <div class="sidebar-toggle d-block d-lg-none mr-1"><i class="feather icon-menu font-large-1"></i></div>
+                                            <div class="avatar user-profile-toggle m-0 m-0 mr-1">
+                                                <img src="../app-assets/images/portrait/small/avatar-s-1.jpg" alt="" height="40" width="40" />
+                                                <span class="avatar-status-busy"></span>
+                                            </div>
+                                            <h6 class="mb-0">!Dr Chatbot</h6>
+                                        </div>
+                                        <span class="favorite"><i class="feather icon-star font-medium-5"></i></span>
+                                    </header>
+                                </div>
+                                <div class="user-chats">
+                                    <div class="chats">
+                                       
+                                        <div class="chat chat-left">
+                                            <div class="chat-avatar">
+                                                <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
+                                                    <img src="../app-assets/images/portrait/small/avatar-s-7.jpg" alt="avatar" height="40" width="40" />
+                                                </a>
+                                            </div>
+                                            <div class="chat-body">
+                                                <div class="chat-content">
+                                                    <p>?Ask me about faults with your equipment</p>
+                                                </div>
+                                                <div class="chat-content">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat">
+                                            <div class="chat-avatar">
+                                                <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+                                                    <img src="../app-assets/images/portrait/small/avatar-s-1.jpg" alt="avatar" height="40" width="40" />
+                                                </a>
+                                            </div>
+                                            <div class="chat-body">
+                                                <div class="chat-content">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-app-form">
+                                    <form class="chat-app-input d-flex" onsubmit="enter_chat();" action="javascript:void(0);">
+                                        <input type="text" class="form-control message mr-1 ml-50" id="iconLeft4-1" placeholder="Type your message">
+                                        <button type="button" class="btn btn-primary send" onclick="enter_chat();"><i class="fa fa-paper-plane-o d-lg-none"></i> <span class="d-none d-lg-block">Send</span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2020.</span>
+            <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="feather icon-arrow-up"></i></button>
+        </p>
+    </footer>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../app-assets/vendors/js/ui/jquery.sticky.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+    <script src="../app-assets/js/scripts/components.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../app-assets/js/scripts/pages/app-chat.js"></script>
+    <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>
