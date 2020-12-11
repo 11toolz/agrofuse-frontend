@@ -173,8 +173,40 @@ $(window).on("resize", function() {
 function enter_chat(source) {
    var message = $(".message").val();
    if(message != ""){
-  var html = '<div class="chat-content">' + "<p>" + message + "</p>" + "</div>";
-  $(".chat:last-child .chat-body").append(html);
+    
+ var html = '<div class="chat">'+
+ 
+
+'  <div class="chat-body">'+
+   '<div class="chat-content">' + "<p>" + message + "</p>" + "</div>" +
+   '</div>'+
+   '</div>';
+  $(".chats").append(html);
+
+    let url = "https://agrofuse-maintenance-api.herokuapp.com/chatbot"
+    const http = new XMLHttpRequest()
+    let text = {
+      'text': message
+    }
+    http.open("POST", url, true)
+    http.setRequestHeader('Content-type', 'application/json');
+    
+    http.onload = () => {
+      let ress = JSON.parse(http.responseText);
+     let ressr = ress.chatbot_response
+    
+      var bothtml = '<div class="chat chat-left">'+
+
+'  <div class="chat-body">'+
+   '<div class="chat-content">' + "<p>" + ressr + "</p>" + "</div>" +
+   '</div>'+
+   '</div>';
+  $(".chats").append(bothtml);
+     
+    };
+    http.send(JSON.stringify(text))
+
+
   $(".message").val("");
   $(".user-chats").scrollTop($(".user-chats > .chats").height());
    }
