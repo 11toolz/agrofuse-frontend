@@ -5,6 +5,7 @@ let inputMsg = document.querySelector('.message');
 
 function apiResponse() {
     let searchText = inputMsg.value;
+    console.log(searchText);
 
     if(searchText === " ") {
         alert("You have not typed a message. Please do so before clicking send.");
@@ -13,12 +14,15 @@ function apiResponse() {
 
     let data = {
         method: 'POST',
-        mode: 'no-cors',
+        mode: 'cors',
         cache: 'no-cache',
         credentials: 'same-origin',
         headers: {
-            'Connection': 'keep-alive',
-            'Accept-Encoding': 'gzip,deflate,br',
+            // 'Connection': 'keep-alive',
+            // 'Accept-Encoding': 'gzip,deflate,br',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
+            'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
@@ -38,7 +42,7 @@ function apiResponse() {
                         </div>
                         <div class="chat-body">
                             <div class="chat-content">
-                                <p>${answer}</p>
+                                <p>${answer['chatbot_response']}</p>
                             </div>
                             <div class="chat-content">
                                 <p></p>
